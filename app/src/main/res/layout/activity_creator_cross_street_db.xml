@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"
+tools:context=".CreatorCrossStreetDB">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:layout_centerHorizontal="true"
+    android:textAlignment="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signal Name"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/enterSignalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Signal Name"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crossing Count"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/enterCrossingCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Crossing Count"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crossing1"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/enterCrossing1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Crossing1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crossing2"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/enterCrossing2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter crossing2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crossing3"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/enterCrossing3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Crossing3"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crossing4"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/enterCrossing4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Crossing4"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coordinates_X"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/enterCoordinateX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter X Coordinate"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coordinates_Y"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/enterCoordinateY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Y Coordinate"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:onClick="signalDataSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Submit"/>
+
+
+        <Button
+            android:onClick="loadData"
+            android:id="@+id/loaddata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Load All"/>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Data"
+            android:id="@+id/finaldata2"
+            android:layout_centerHorizontal="true" />
+
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

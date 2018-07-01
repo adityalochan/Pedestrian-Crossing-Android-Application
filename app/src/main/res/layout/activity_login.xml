@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:background="@drawable/bull5"
+    tools:context=".Login">
+
+    <com.example.android.pedestriancrossing.CustomGifView
+        android:id="@+id/gifview"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="80dp"
+        android:padding="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="User Name (UID)"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your username"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textColorHint="#64B5F6"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:password="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textColorHint="#64B5F6"
+            android:textStyle="bold|italic" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00796B"
+            android:onClick="login"
+            android:text="Login"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:background="#00796B"
+            android:onClick="registration"
+            android:text="  Registration  "
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/openwebpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openwebpage"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="50dp"
+        android:text="Open Web Page"
+        android:background="#00796B"
+        android:textAlignment="center" />
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Final Data"-->
+    <!--android:id="@+id/finaldata1"-->
+    <!--android:layout_centerHorizontal="true" />-->
+    <!--</ScrollView>-->
+    </LinearLayout>
+
+</LinearLayout>

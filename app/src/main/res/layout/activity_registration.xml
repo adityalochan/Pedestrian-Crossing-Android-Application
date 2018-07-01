@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bull5"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textStyle="bold">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="First Name"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your First Name"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textColorHint="@android:color/holo_blue_bright"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Last Name"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Last Name"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textColorHint="@android:color/holo_blue_bright"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="UID"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterUid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your University ID Number"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textColorHint="@android:color/holo_blue_bright"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Password "
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:password="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textColorHint="@android:color/holo_blue_bright"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Confirm Password"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/reenterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password again"
+            android:textAlignment="center"
+            android:password="true"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textColorHint="@android:color/holo_blue_bright"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Email ID"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textColorHint="@android:color/holo_blue_bright" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:background="#00796B"
+            android:onClick="registrationSubmit"
+            android:text="Submit"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+        <!--<Button-->
+        <!--android:onClick="loaddata"-->
+        <!--android:id="@+id/loaddata"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="visible"-->
+        <!--android:layout_marginLeft="110dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="Load All"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Final Data"-->
+        <!--android:id="@+id/finaldata"-->
+        <!--android:layout_centerHorizontal="true" />-->
+        <!--</ScrollView>-->
+
+    </LinearLayout>
+
+</ScrollView>
+
+
